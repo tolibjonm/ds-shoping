@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>DS Shop</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="./css/media.css" />
+		<script src="./js/jquery-3.6.0.min.map.js"></script>
+	</head>
+
+	<body>
+		<div class="ds__wraper">
+			<div class="modal__user">
+				<div class="user__panel">
+					<div class="clos__panel">
+						<p class="close__title">Вход</p>
+						<button class="close__btn-reg">
+							<i class="close__icon fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="user__ankets">
+						<div class="user__logi">
+							<form class="user__form">
+								<label class="label__title" for="fname">First Name</label>
+								<input
+									class="user__input"
+									type="text"
+									id="fname"
+									name="fname"
+								/>
+								<p class="alert__name">
+									Введен неверный адрес эл.почты или номер телефона
+								</p>
+								<label class="label__title" for="fpasword">Пароль</label>
+								<input
+									class="user__input"
+									type="text"
+									id="fpasword"
+									name="fname"
+								/>
+								<span class="for__pasword">
+									<label class="container check__name"
+										>One
+										<input type="checkbox" checked="checked" />
+										<span class="checkmark"></span>
+									</label>
+									<p class="Show__pasword">Напомнить пароль</p>
+								</span>
+								<button class="users__pasword-link">Войти</button>
+								<a class="for__registr" href="#"> Зарегистрироваться </a>
+							</form>
+						</div>
+						<p class="or__of">Или</p>
+						<div class="users__social">
+							<p class="users__social-title">Войти как пользователь</p>
+							<button class="user__social-btn">
+								<img
+									class="social__btn-us"
+									src="./images/ds-img/facebook (6) 1.png"
+									alt=""
+								/>
+								<p class="social__name">Facebook</p>
+							</button>
+							<button class="user__social-btn">
+								<img
+									class="social__btn-us"
+									src="./images/ds-img/google.png"
+									alt=""
+								/>
+								<p class="social__name">Google</p>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal__registration">
+				<div class="panel__reg">
+					<div class="clos__reg">
+						<p class="close__title">Вход</p>
+						<button class="close__btn-reg">
+							<i class="close__icon-reg fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="user__ankets">
+						<div class="user__logi">
+							<form class="user__form">
+								<label class="label__title" for="fname">Имя</label>
+								<input
+									class="user__input Fname"
+									type="text"
+									id="fname"
+									name="fname"
+								/>
+								<label class="label__title lnames" for="fpasword">Фамилия</label>
+								<input
+									class="user__input Lname"
+									type="text"
+									id="fpasword"
+									name="fname"
+								/>
+								<label class="label__title" for="fpasword"
+									>Номер телефона</label
+								>
+								<input
+									class="user__input"
+									type="text"
+									id="fpasword"
+									name="fname"
+									placeholder="+38"
+								/>
+								<label class="label__title" for="fpasword">Эл. почта</label>
+								<input
+									class="user__input"
+									type="text"
+									id="fpasword"
+									name="fname"
+									placeholder=""
+								/>
+								<label class="label__title" for="fpasword"
+									>Придумайте пароль</label
+								>
+								<input
+									class="user__input"
+									type="text"
+									id="fpasword"
+									name="fname"
+									placeholder=""
+								/>
+								<span class="for__pasword-reg">
+									<p class="Show__pasword-reg">
+										Пароль должен быть не менее 6 символов длиной, содержать
+										цифры и латинские буквы, в том числе заглавные, и не должен
+										совпадать с именем и эл. почтой
+									</p>
+								</span>
+								<button class="users__pasword-link">Войти</button>
+							</form>
+						</div>
+						<p class="or__of">Или</p>
+						<div class="users__social">
+							<p class="users__social-title">Войти как пользователь</p>
+							<button class="user__social-btn">
+								<img
+									class="social__btn-us"
+									src="./images/ds-img/facebook (6) 1.png"
+									alt=""
+								/>
+								<p class="social__name">Facebook</p>
+							</button>
+							<button class="user__social-btn">
+								<img
+									class="social__btn-us"
+									src="./images/ds-img/google.png"
+									alt=""
+								/>
+								<p class="social__name">Google</p>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<header class="header">
+				<div class="header__top">
+					<div class="container">
+						<div class="header__top-menu">
+							<ul class="catalog__top">
+								<li class="menu__catalog first__menu">
+									<i class="open__menu fa fa-bars" aria-hidden="true"></i>
+									Каталог товара
+									<ul class="top__catalog-in first__drop">
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/plesos.png"
+												alt=""
+											/>
+											Пылесосы
+											<i
+												class="fa-right fa fa-angle-right"
+												aria-hidden="true"
+											></i>
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-2.png"
+												alt=""
+											/>
+											Уход за волосами
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-3.png"
+												alt=""
+											/>
+											Климатическая техника
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-4.png"
+												alt=""
+											/>
+											Сушилка для рук
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-5.png"
+												alt=""
+											/>
+											Минимойки
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-6.png"
+												alt=""
+											/>
+											Пароочистители
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-8.png"
+												alt=""
+											/>
+											Аппараты высокого давления
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/icon-9.png"
+												alt=""
+											/>
+											Аксессуары
+											<i
+												class="fa-right fa fa-angle-right"
+												aria-hidden="true"
+											></i>
+										</li>
+										<li class="menu__catalog-in">
+											<img
+												class="menu__catalog-img"
+												src="./images/icon__menu/plesos.png"
+												alt=""
+											/>
+											Бренды
+											<i
+												class="fa-right fa fa-angle-right"
+												aria-hidden="true"
+											></i>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="catalog__info">
+								<li class="menu__catalog second__menu">
+									Общая информация
+									<i
+										class="open__menu arrow__down fa fa-angle-down"
+										aria-hidden="true"
+									></i>
+									<ul class="top__catalog-in second__drop">
+										<li class="menu__catalog-in">
+											<a class="catalog__link" href="#"> Оплата и доставка </a>
+										</li>
+										<li class="menu__catalog-in">
+											<a class="catalog__link" href="#">
+												Условия возврата и обмена
+											</a>
+										</li>
+										<li class="menu__catalog-in">
+											<a class="catalog__link" href="#"> Гарантия </a>
+										</li>
+										<li class="menu__catalog-in">
+											<a class="catalog__link" href="#">
+												Энергоэффективность
+											</a>
+										</li>
+										<li class="menu__catalog-in">
+											<a class="catalog__link" href="#"> Публичная оферта </a>
+										</li>
+										<li class="menu__catalog-in">
+											<a class="catalog__link" href="#"> Контакты </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="catalog__phone">
+								<li class="menu__catalog there__menu">
+									<i class="open__menu fa fa-phone" aria-hidden="true"></i>
+									0 800 33-96-91
+									<i
+										class="open__menu arrow__down fa fa-angle-down"
+										aria-hidden="true"
+									></i>
+									<ul class="top__catalog-in there__drop">
+										<li class="menu__catalog-in">Наш график:</li>
+										<li class="menu__catalog-in">
+											Пн-пт: <span class="catalog-span">09.00 - 18.00</span>
+										</li>
+										<li class="menu__catalog-in">
+											Сб-вс: <span class="catalog-span">выходной</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="my__page">
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<a class="my__acount" href="#"> Личный кабинет </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__bar">
+							<div class="logo__img-wrap">
+								<a class="header__logo" href="#">
+									<img class="logo__brend" src="./images/Logo.png" alt="" />
+								</a>
+							</div>
+							<form class="header__form" action="">
+								<input
+									class="header__input"
+									type="text"
+									placeholder="Введите название товара"
+								/>
+								<button class="input__btn">Искать</button>
+							</form>
+							<div class="header__right-blog">
+								<select class="select__lan" name="blacklist">
+									<option value="rus">Rus</option>
+									<option value="uzb">Uzb</option>
+									<option value="eng">Eng</option>
+									<!--Параметр, который будет предварительно выбран -->
+								</select>
+								<i
+									class="header__btn-icon fa fa-balance-scale"
+									aria-hidden="true"
+								></i>
+								<i
+									class="header__btn-icon fa fa-heart-o"
+									aria-hidden="true"
+								></i>
+								<i
+									class="header__btn-icon fa fa-shopping-cart"
+									aria-hidden="true"
+								></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="header__slider">
+				<div class="slider">
+					<div class="slider__inner">
+						<img class="slider__img" src="./images/slider-img.png" alt="" />
+						<div class="slider__txt">
+							<p class="slider__text">Закажи сейчас и получи</p>
+							<p class="slider__title">скидку 15%</p>
+							<button class="slider__btn">В магазин</button>
+						</div>
+					</div>
+					<div class="slider__inner">
+						<img class="slider__img" src="./images/slider-img.png" alt="" />
+						<div class="slider__txt">
+							<p class="slider__text">Закажи сейчас и получи</p>
+							<p class="slider__title">скидку 15%</p>
+							<button class="slider__btn">В магазин</button>
+						</div>
+					</div>
+					<div class="slider__inner">
+						<img class="slider__img" src="./images/slider-img.png" alt="" />
+						<div class="slider__txt">
+							<p class="slider__text">Закажи сейчас и получи</p>
+							<p class="slider__title">скидку 15%</p>
+							<button class="slider__btn">В магазин</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="about__info">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__item">
+							<img class="about__img" src="./images/about-1.png" alt="" />
+							<div class="about__txt">
+								<p class="about__title">Доставка</p>
+								<p class="about__text">Бесплатно по всей Украине</p>
+							</div>
+						</div>
+						<div class="about__item">
+							<img class="about__img" src="./images/about-2.png" alt="" />
+							<div class="about__txt">
+								<p class="about__title">Гарантия</p>
+								<p class="about__text">
+									Сертифицированная техника с официальной гарантией от
+									производителя
+								</p>
+							</div>
+						</div>
+						<div class="about__item">
+							<img class="about__img" src="./images/about-3.png" alt="" />
+							<div class="about__txt">
+								<p class="about__title">Оплата</p>
+								<p class="about__text">
+									Оплатить покупку можно наличными, картой или безналичным
+									расчетом.
+								</p>
+							</div>
+						</div>
+						<div class="about__item">
+							<img class="about__img" src="./images/about-4.png" alt="" />
+							<div class="about__txt">
+								<p class="about__title">Возврат</p>
+								<p class="about__text">
+									Возврат товара осуществляется в течение 14 дней после покупки
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pipular">
+				<div class="container">
+					<div class="row">
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-1.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-2.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-3.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-4.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-5.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-6.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-7.png" alt="" />
+						</div>
+						<div class="card col-md-3">
+							<img class="card-img" src="./images/card-8.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="promotional__offers">
+				<div class="container">
+					<p class="promotional__title">Акционные предложения</p>
+					<div class="promotional__offers-slider">
+						<div class="promotional__sliders-item">
+							<div class="promotional__slider-inner">
+								<div class="row">
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="promotional__slider-inner">
+								<div class="row">
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="promotional__slider-inner">
+								<div class="row">
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="promotional__slider-inner">
+								<div class="row">
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="promotional__slider-card col-md-3">
+										<div class="promotional__img-blog">
+											<button class="promotional__link">Топ продаж</button>
+											<span class="promotional__icons">
+												<i
+													class="promotional__icon fa fa-balance-scale"
+													aria-hidden="true"
+												></i>
+												<i
+													class="promotional__icon fa fa-heart-o"
+													aria-hidden="true"
+												></i>
+											</span>
+											<img
+												class="promotional__images"
+												src="./images/property/img-1.png"
+												alt=""
+											/>
+										</div>
+										<p class="promotional__text">
+											Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+										</p>
+										<div class="promotional__blog-shop">
+											<span class="liceds__icons">
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-w fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon star-y fa fa-star"
+													aria-hidden="true"
+												></i>
+												<i
+													class="liced__icon icons-star-sh fa fa-comments-o"
+													aria-hidden="true"
+												></i>
+												<p class="liceds__tegs">12</p>
+											</span>
+											<div class="selected__info">
+												<select class="select-css">
+													<option>Что в комплекте</option>
+													<option>Apples</option>
+													<option>Bananas</option>
+													<option>Grapes</option>
+													<option>Oranges</option>
+												</select>
+											</div>
+											<div class="cent__cor">
+												<span class="cent__cor-inner">
+													<p class="old__cent">12900 грн</p>
+													<p class="new__cent">12900 грн</p>
+												</span>
+												<button class="icon__shop">
+													<i
+														class="icon__shop-inn fa fa-shopping-cart"
+														aria-hidden="true"
+													></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="modal__search">
+				<div class="search__inner">
+					<form class="search__form" action="">
+						<input class="search__inp" type="text">
+						<button class="search__btn">
+							Искать
+						</button>
+						<button class="search__exit">
+							<i class="search__exit-inn fa fa-times" aria-hidden="true"></i>
+						</button>
+					</form>
+					<div class="search__card">
+						<ul class="search__list">
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+							<li class="searching__list">
+								<img class="searching__item" src="./images/search/search.png" alt="">
+								<span class="searching__txt">
+									<p class="searching__title">
+										Пылесос DYSON CY26 CINETIC BIG BALL AnimalPRO 2
+									</p>
+									<span class="searching__cent">
+										<p class="searching__cent-smail">12900 грн</p>
+										<p class="searching__cent-big">12900 грн</p>
+									</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<section class="all__brends">
+				<div class="container">
+					<div class="all__brends-slider">
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-1.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-2.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-3.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-4.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-5.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brrend-6.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<!-- sasasasasasa -->
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-1.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-2.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-3.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-4.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brend-5.png"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div class="brand__img-blog">
+							<a class="brend__img-link" href="">
+								<img
+									class="brend__img-item"
+									src="./images/bend-img/brrend-6.png"
+									alt=""
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds__info">
+				<div class="container">
+					<p class="ds__title">Интернет-магазин Ds-shop</p>
+					<div class="row">
+						<div class="ds__text col-md-8">
+							<p class="ds__txt">
+								Мощные цилиндрические пылесосы Dyson – это идеальное решение для
+								наведения порядка в квартире или загородном коттедже. Благодаря
+								контейнеру большого объема и высокой мощности всасывания вы без
+								труда сделаете уборку сразу в нескольких комнатах дома.
+							</p>
+
+							<p class="ds__txt">
+								На нашем сайте вы можете купить технологичную и функциональную
+								технику с доставкой по Москве, МО, а также в другие российские
+								города.
+							</p>
+
+							<p class="ds__txt">
+								Мощные цилиндрические пылесосы Dyson – это идеальное решение для
+								наведения порядка в квартире или загородном коттедже. Благодаря
+								контейнеру большого объема и высокой мощности всасывания вы без
+								труда сделаете уборку сразу в нескольких комнатах дома.
+							</p>
+							<p class="ds__txt">
+								На нашем сайте вы можете купить технологичную и функциональную
+								технику с доставкой по Москве, МО, а также в другие российские
+								города.
+							</p>
+						</div>
+						<div class="ds__img col-md-4">
+							<a class="ds__img-link" href="">
+								<img class="ds__images" src="./images/ds-img/ds-1.png" alt="" />
+							</a>
+							<a class="ds__img-link" href="">
+								<img class="ds__images" src="./images/ds-img/ds-2.png" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact">
+				<div class="container">
+					<div class="contact__inner">
+						<div class="contact__info">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<p class="info__text">
+								Подпишитесь и будьте в курсе новинок и специальных предложений
+								от Dyson!
+							</p>
+						</div>
+						<div class="contact__form">
+							<form class="contact__form-item" action="">
+								<input
+									class="contact__form-inp"
+									type="text"
+									placeholder="Введите ваш E-mail"
+								/>
+								<button class="contact__form-btn">Подписаться</button>
+							</form>
+						</div>
+						<div class="contact__social">
+							<p class="social__txt">Мы в соц сетях:</p>
+							<span class="sociall__icons">
+								<i class="social__icons fa fa-facebook" aria-hidden="true"></i>
+								<i class="social__icons fa fa-instagram" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer__contact col-md-3">
+							<p class="footer__title">Каталог товаров</p>
+							<ul class="footer__inner">
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Пылесосы </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Уход за волосами </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Климатическая техника </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Сушилка для рук </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Минимойки </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Пароочистители </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#">
+										Аппараты высокого давления
+									</a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Аксессуары </a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__contact col-md-3">
+							<p class="footer__title">Общая информация</p>
+							<ul class="footer__inner">
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Оплата и доставка </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#">
+										Условия возврата и обмена
+									</a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Гарантия </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Энергоэффективность </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Публичная оферта </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> Контакты </a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__contact col-md-3">
+							<p class="footer__title">Контакты</p>
+							<ul class="footer__inner">
+								<li class="footer__list">
+									<a class="footer__link" href="#">
+										Г. Киев, проспект Сетепана Бандеры, 21
+									</a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> store@chisto.ua </a>
+								</li>
+								<li class="footer__list">
+									<a class="footer__link" href="#"> 0 800 33-96-91 </a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__logo-txt col-md-3">
+							<a class="footer__img" href="#">
+								<img class="footer__images" src="./images/Logo.png" alt="" />
+							</a>
+							<p class="footer__logo-text">
+								© 2015-2021, Официальный интернет-магазин Ds-shop в Украине
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./js/jquery-3.6.0.min.map.js"></script>
+		<script src="/js/mixitup.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- <script src="../Новая папка/imtihon-1/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+		<script src="./css/bootstrap.bundle.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.fancybox.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
